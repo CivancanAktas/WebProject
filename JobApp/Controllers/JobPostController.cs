@@ -1,6 +1,17 @@
-namespace JobApp.Controllers;
+namespace JobApp.Controllers
+{
+    
 
-  /*{
+
+
+
+
+
+
+}
+
+
+/*
  
 
   public class JobPostController : Controller
@@ -15,3 +26,4 @@ namespace JobApp.Controllers;
         // Actions for job posting would go here
     }
 }
+*/

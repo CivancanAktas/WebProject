@@ -95,3 +95,4 @@ E:\DERSLER\WebProgramlama\WebProject\JobApp\obj\Debug\net9.0\refint\JobApp.dll
 E:\DERSLER\WebProgramlama\WebProject\JobApp\obj\Debug\net9.0\JobApp.pdb
 E:\DERSLER\WebProgramlama\WebProject\JobApp\obj\Debug\net9.0\JobApp.genruntimeconfig.cache
 E:\DERSLER\WebProgramlama\WebProject\JobApp\obj\Debug\net9.0\ref\JobApp.dll
+E:\DERSLER\WebProgramlama\WebProject\JobApp\obj\Debug\net9.0\JobApp.sourcelink.json

@@ -1,7 +1,21 @@
+using JobApp.Models;
+using Microsoft.AspNetCore.Identity;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+/*builder.Services.Configure<IdentityOptions>(options =>
+{
+    options.Password.RequireDigit = false;
+    options.Password.RequireLowercase = false;
+    options.Password.RequireUppercase = false;
+    options.Password.RequireNonAlphanumeric = false;
+    options.Password.RequiredLength = 1; 
+    options.Password.RequiredUniqueChars = 0;
+    options.User.RequireUniqueEmail = true;
+});*/
 
 var app = builder.Build();
 
@@ -40,4 +54,10 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=LoginPage}/{action=RegisterEmployer}/{id?}")
     .WithStaticAssets();
+
+
+/*builder.Services.AddIdentity<Employee, Employer>()
+    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddDefaultTokenProviders();*/
+
 app.Run();
