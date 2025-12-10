@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "suYciChLGofx7chOpb3EpIsqKnUczhlHlPNTq3htLmc=",
+  "Hash": "M6U3NYRrDYBK/YlEvyJuuHlQaBlPrKmcr0rqrAeCrDs=",
   "Source": "JobApp",
   "BasePath": "_content/JobApp",
   "Mode": "Default",
@@ -836,27 +836,6 @@
       "OriginalItemSpec": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\obj\\Debug\\net9.0\\compressed\\jnot8fv1wp-61n19gt1b8.gz",
-      "SourceId": "JobApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\obj\\Debug\\net9.0\\compressed\\",
-      "BasePath": "_content/JobApp",
-      "RelativePath": "favicon#[.{fingerprint=61n19gt1b8}]?.ico.gz",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\wwwroot\\favicon.ico",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "Fingerprint": "nezsohjtde",
-      "Integrity": "wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\wwwroot\\favicon.ico"
-    },
-    {
       "Identity": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\obj\\Debug\\net9.0\\compressed\\kahhgdxmvo-47otxtyo56.gz",
       "SourceId": "JobApp",
       "SourceType": "Discovered",
@@ -1151,12 +1130,12 @@
       "OriginalItemSpec": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\obj\\Debug\\net9.0\\compressed\\udruekbwoo-b9sayid5wm.gz",
+      "Identity": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\obj\\Debug\\net9.0\\compressed\\udruekbwoo-b0uiflec5j.gz",
       "SourceId": "JobApp",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/JobApp",
-      "RelativePath": "css/site#[.{fingerprint=b9sayid5wm}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=b0uiflec5j}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1165,8 +1144,8 @@
       "RelatedAsset": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "0suozzrugb",
-      "Integrity": "0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=",
+      "Fingerprint": "kcl192aonu",
+      "Integrity": "rEynCn+lf1Gm1yhL7kq4Es223wqyBd/RfEnxGVopp7w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\wwwroot\\css\\site.css"
@@ -1417,32 +1396,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "b9sayid5wm",
-      "Integrity": "j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=",
+      "Fingerprint": "b0uiflec5j",
+      "Integrity": "aytctGLTPmhNKjJobsusTx1JbTR/abWDvGgNchTTrcM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
-    },
-    {
-      "Identity": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\wwwroot\\favicon.ico",
-      "SourceId": "JobApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\wwwroot\\",
-      "BasePath": "_content/JobApp",
-      "RelativePath": "favicon#[.{fingerprint}]?.ico",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "61n19gt1b8",
-      "Integrity": "Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
       "Identity": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\wwwroot\\js\\site.js",
@@ -2728,13 +2686,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.b9sayid5wm.css",
-      "AssetFile": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\obj\\Debug\\net9.0\\compressed\\udruekbwoo-b9sayid5wm.gz",
+      "Route": "css/site.b0uiflec5j.css",
+      "AssetFile": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\obj\\Debug\\net9.0\\compressed\\udruekbwoo-b0uiflec5j.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003134796238"
+          "Quality": "0.001631321370"
         }
       ],
       "ResponseHeaders": [
@@ -2744,15 +2702,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "318"
+          "Value": "612"
         },
         {
           "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
+          "Value": "\"rEynCn+lf1Gm1yhL7kq4Es223wqyBd/RfEnxGVopp7w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 09 Dec 2025 13:48:56 GMT"
+          "Value": "Wed, 10 Dec 2025 14:30:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2772,13 +2730,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "W/\"aytctGLTPmhNKjJobsusTx1JbTR/abWDvGgNchTTrcM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "b0uiflec5j"
         },
         {
           "Name": "label",
@@ -2786,12 +2744,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-aytctGLTPmhNKjJobsusTx1JbTR/abWDvGgNchTTrcM="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css",
+      "Route": "css/site.b0uiflec5j.css",
       "AssetFile": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2801,7 +2759,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "667"
+          "Value": "1368"
         },
         {
           "Name": "Content-Type",
@@ -2809,11 +2767,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "\"aytctGLTPmhNKjJobsusTx1JbTR/abWDvGgNchTTrcM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 09 Dec 2025 13:48:56 GMT"
+          "Value": "Wed, 10 Dec 2025 14:30:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2823,7 +2781,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "b0uiflec5j"
         },
         {
           "Name": "label",
@@ -2831,13 +2789,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-aytctGLTPmhNKjJobsusTx1JbTR/abWDvGgNchTTrcM="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css.gz",
-      "AssetFile": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\obj\\Debug\\net9.0\\compressed\\udruekbwoo-b9sayid5wm.gz",
+      "Route": "css/site.b0uiflec5j.css.gz",
+      "AssetFile": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\obj\\Debug\\net9.0\\compressed\\udruekbwoo-b0uiflec5j.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2846,7 +2804,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "318"
+          "Value": "612"
         },
         {
           "Name": "Content-Type",
@@ -2854,11 +2812,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
+          "Value": "\"rEynCn+lf1Gm1yhL7kq4Es223wqyBd/RfEnxGVopp7w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 09 Dec 2025 13:48:56 GMT"
+          "Value": "Wed, 10 Dec 2025 14:30:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2876,7 +2834,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "b0uiflec5j"
         },
         {
           "Name": "label",
@@ -2884,18 +2842,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y="
+          "Value": "sha256-rEynCn+lf1Gm1yhL7kq4Es223wqyBd/RfEnxGVopp7w="
         }
       ]
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\obj\\Debug\\net9.0\\compressed\\udruekbwoo-b9sayid5wm.gz",
+      "AssetFile": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\obj\\Debug\\net9.0\\compressed\\udruekbwoo-b0uiflec5j.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003134796238"
+          "Quality": "0.001631321370"
         }
       ],
       "ResponseHeaders": [
@@ -2905,15 +2863,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "318"
+          "Value": "612"
         },
         {
           "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
+          "Value": "\"rEynCn+lf1Gm1yhL7kq4Es223wqyBd/RfEnxGVopp7w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 09 Dec 2025 13:48:56 GMT"
+          "Value": "Wed, 10 Dec 2025 14:30:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2933,13 +2891,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "W/\"aytctGLTPmhNKjJobsusTx1JbTR/abWDvGgNchTTrcM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-aytctGLTPmhNKjJobsusTx1JbTR/abWDvGgNchTTrcM="
         }
       ]
     },
@@ -2954,7 +2912,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "667"
+          "Value": "1368"
         },
         {
           "Name": "Content-Type",
@@ -2962,11 +2920,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "\"aytctGLTPmhNKjJobsusTx1JbTR/abWDvGgNchTTrcM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 09 Dec 2025 13:48:56 GMT"
+          "Value": "Wed, 10 Dec 2025 14:30:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2976,13 +2934,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-aytctGLTPmhNKjJobsusTx1JbTR/abWDvGgNchTTrcM="
         }
       ]
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\obj\\Debug\\net9.0\\compressed\\udruekbwoo-b9sayid5wm.gz",
+      "AssetFile": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\obj\\Debug\\net9.0\\compressed\\udruekbwoo-b0uiflec5j.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2991,7 +2949,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "318"
+          "Value": "612"
         },
         {
           "Name": "Content-Type",
@@ -2999,11 +2957,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
+          "Value": "\"rEynCn+lf1Gm1yhL7kq4Es223wqyBd/RfEnxGVopp7w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 09 Dec 2025 13:48:56 GMT"
+          "Value": "Wed, 10 Dec 2025 14:30:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3021,305 +2979,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y="
-        }
-      ]
-    },
-    {
-      "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\obj\\Debug\\net9.0\\compressed\\jnot8fv1wp-61n19gt1b8.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000405022276"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2468"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 09 Dec 2025 13:48:56 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/x-icon"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "61n19gt1b8"
-        },
-        {
-          "Name": "label",
-          "Value": "favicon.ico"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
-        }
-      ]
-    },
-    {
-      "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\wwwroot\\favicon.ico",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5430"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/x-icon"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 09 Dec 2025 13:48:56 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "61n19gt1b8"
-        },
-        {
-          "Name": "label",
-          "Value": "favicon.ico"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
-        }
-      ]
-    },
-    {
-      "Route": "favicon.61n19gt1b8.ico.gz",
-      "AssetFile": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\obj\\Debug\\net9.0\\compressed\\jnot8fv1wp-61n19gt1b8.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2468"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/x-icon"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 09 Dec 2025 13:48:56 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "61n19gt1b8"
-        },
-        {
-          "Name": "label",
-          "Value": "favicon.ico.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0="
-        }
-      ]
-    },
-    {
-      "Route": "favicon.ico",
-      "AssetFile": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\obj\\Debug\\net9.0\\compressed\\jnot8fv1wp-61n19gt1b8.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000405022276"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2468"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 09 Dec 2025 13:48:56 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/x-icon"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
-        }
-      ]
-    },
-    {
-      "Route": "favicon.ico",
-      "AssetFile": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\wwwroot\\favicon.ico",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5430"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/x-icon"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 09 Dec 2025 13:48:56 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
-        }
-      ]
-    },
-    {
-      "Route": "favicon.ico.gz",
-      "AssetFile": "E:\\DERSLER\\WebProgramlama\\WebProject\\JobApp\\obj\\Debug\\net9.0\\compressed\\jnot8fv1wp-61n19gt1b8.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2468"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/x-icon"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 09 Dec 2025 13:48:56 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0="
+          "Value": "sha256-rEynCn+lf1Gm1yhL7kq4Es223wqyBd/RfEnxGVopp7w="
         }
       ]
     },
@@ -3348,7 +3008,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 09 Dec 2025 14:49:52 GMT"
+          "Value": "Wed, 10 Dec 2025 15:15:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3401,7 +3061,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 09 Dec 2025 14:49:52 GMT"
+          "Value": "Wed, 10 Dec 2025 15:15:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3438,7 +3098,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 09 Dec 2025 14:49:52 GMT"
+          "Value": "Wed, 10 Dec 2025 15:15:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3485,7 +3145,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 09 Dec 2025 14:49:52 GMT"
+          "Value": "Wed, 10 Dec 2025 15:15:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3538,7 +3198,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 09 Dec 2025 14:49:52 GMT"
+          "Value": "Wed, 10 Dec 2025 15:15:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3575,7 +3235,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 09 Dec 2025 14:49:52 GMT"
+          "Value": "Wed, 10 Dec 2025 15:15:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3622,7 +3282,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 09 Dec 2025 14:49:52 GMT"
+          "Value": "Wed, 10 Dec 2025 15:15:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3683,7 +3343,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 09 Dec 2025 14:49:52 GMT"
+          "Value": "Wed, 10 Dec 2025 15:15:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3728,7 +3388,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 09 Dec 2025 14:49:52 GMT"
+          "Value": "Wed, 10 Dec 2025 15:15:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3783,7 +3443,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 09 Dec 2025 14:49:52 GMT"
+          "Value": "Wed, 10 Dec 2025 15:15:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3844,7 +3504,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 09 Dec 2025 14:49:52 GMT"
+          "Value": "Wed, 10 Dec 2025 15:15:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3889,7 +3549,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 09 Dec 2025 14:49:52 GMT"
+          "Value": "Wed, 10 Dec 2025 15:15:59 GMT"
         },
         {
           "Name": "Cache-Control",

@@ -29,3 +29,35 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+/* JobApp theme additions */
+.navbar-brand small { font-size: 0.8rem; }
+.navbar-dark .nav-link { color: rgba(255,255,255,0.9); }
+.navbar-dark .nav-link:hover { color: #fff; }
+
+.site-hero {
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+.job-card {
+  border: 1px solid #e6eefc;
+  border-radius: 6px;
+  padding: 16px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(8, 35, 70, 0.04);
+}
+
+.footer {
+  background: #f8f9fa;
+  padding: 20px 0;
+}
+
+/* Small utility */
+.muted-small { font-size: 0.85rem; color: #6c757d; }

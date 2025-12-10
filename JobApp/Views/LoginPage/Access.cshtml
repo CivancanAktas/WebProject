@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Access";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h3 class="card-title mb-4">Welcome to JobApp</h3>
+                    <p class="muted-small">Please login or register to continue.</p>
+
+                    <div class="d-grid gap-2 mt-4">
+                        <a class="btn btn-primary btn-lg" asp-controller="LoginPage" asp-action="LoginPage">Login</a>
+                        <a class="btn btn-outline-primary" asp-controller="LoginPage" asp-action="RegisterEmployee">Register as Employee</a>
+                        <a class="btn btn-outline-secondary" asp-controller="LoginPage" asp-action="RegisterEmployer">Register as Employer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
