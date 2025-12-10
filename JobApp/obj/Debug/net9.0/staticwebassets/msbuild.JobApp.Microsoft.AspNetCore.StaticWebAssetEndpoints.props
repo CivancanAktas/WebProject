@@ -16,13 +16,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\JobApp.tbblskepmr.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Z0elVDibwHuaFd3AiNVk0EJQ2tu2A1J7pYxaBJ\u002BJEcE="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1124"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Z0elVDibwHuaFd3AiNVk0EJQ2tu2A1J7pYxaBJ\u002BJEcE=\u0022"},{"Name":"Last-Modified","Value":"Wed, 10 Dec 2025 15:15:59 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1124"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Z0elVDibwHuaFd3AiNVk0EJQ2tu2A1J7pYxaBJ\u002BJEcE=\u0022"},{"Name":"Last-Modified","Value":"Wed, 10 Dec 2025 16:01:43 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/JobApp/JobApp.tbblskepmr.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\JobApp.tbblskepmr.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tbblskepmr"},{"Name":"integrity","Value":"sha256-Z0elVDibwHuaFd3AiNVk0EJQ2tu2A1J7pYxaBJ\u002BJEcE="},{"Name":"label","Value":"_content/JobApp/JobApp.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1124"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Z0elVDibwHuaFd3AiNVk0EJQ2tu2A1J7pYxaBJ\u002BJEcE=\u0022"},{"Name":"Last-Modified","Value":"Wed, 10 Dec 2025 15:15:59 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1124"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Z0elVDibwHuaFd3AiNVk0EJQ2tu2A1J7pYxaBJ\u002BJEcE=\u0022"},{"Name":"Last-Modified","Value":"Wed, 10 Dec 2025 16:01:43 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/JobApp/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
