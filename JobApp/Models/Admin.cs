@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-
+namespace JobApp.Models;
 public class Admin
 {
     

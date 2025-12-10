@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-
+namespace JobApp.ViewModels;
 
 
 public class RegisterEmployeeViewModel
