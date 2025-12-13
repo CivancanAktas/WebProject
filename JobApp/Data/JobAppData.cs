@@ -6,12 +6,12 @@ namespace JobApp.Data
     public class JobListing
     {
         public int Id { get; set; }
-        public string Title { get; set; }
-        public string Company { get; set; }
-        public string Location { get; set; }
-        public string Description { get; set; }
+        public string? Title { get; set; }
+        public string? Company { get; set; }
+        public string? Location { get; set; }
+        public string? Description { get; set; }
         public int Salary { get; set; }
-        public string JobType { get; set; }
+        public string? JobType { get; set; }
         public DateTime PostedDate { get; set; }
     }
 

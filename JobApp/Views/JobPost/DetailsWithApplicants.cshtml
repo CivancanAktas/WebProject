@@ -1,0 +1,41 @@
+@model JobApp.Models.JobDetails
+
+@{
+    ViewData["Title"] = "Job Details — Applicants";
+}
+
+<h2>@Model.Title</h2>
+
+<div>
+    <h4>Applicants</h4>
+    @if (Model.Employees == null || !Model.Employees.Any())
+    {
+        <p>No applicants yet.</p>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Resume</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var emp in Model.Employees)
+                {
+                    <tr>
+                        <td>@emp.FullName</td>
+                        <td>@emp.Email</td>
+                        <td>@(string.IsNullOrEmpty(emp.Resume) ? "—" : emp.Resume)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+    <p>
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </p>
+</div>

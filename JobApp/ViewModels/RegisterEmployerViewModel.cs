@@ -17,8 +17,8 @@ public class RegisterEmployerViewModel
     [Display(Name = "Contact Email")]
     public string? ContactEmail { get; set; }
 
+    
      [Required]
-    [EmailAddress]
     [Display(Name = "Company Name")]
     public string? CompanyName { get; set; }
 

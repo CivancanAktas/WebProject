@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace JobApp.Data;
 
+// Seed helper: ensures required roles & default users exist in the Identity database
 public static class SeedIdentityData
 {
     private const string adminUser = "admin@jobapp.local";
@@ -15,6 +16,7 @@ public static class SeedIdentityData
     private const string employeeRole = "Employee";
 
     
+    // InitializeAsync: creates roles and example users. Call once after DbContext and Identity are configured.
     public static async Task InitializeAsync(IServiceProvider services)
     {
         using var scope = services.CreateScope();

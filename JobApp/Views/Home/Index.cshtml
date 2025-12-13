@@ -1,3 +1,51 @@
-﻿<div class="site-hero" style="background-image: url("homepageBackground.jpg");>
-	<a class="btn btn-lg btn-light" href="/LoginPage/Access" style="font-weight:700;">LET'S FIND YOU A JOB</a>
+﻿<div class="site-hero" style="background-image: url('homepageBackground.jpg');">
+	@if (User.Identity != null && User.Identity.IsAuthenticated) {
+		<a class="btn btn-lg btn-light" asp-controller="JobPost" asp-action="Index" style="font-weight:700;">LET'S FIND YOU A JOB</a>
+	} else {
+		<a class="btn btn-lg btn-light" href="/LoginPage/LoginPage" style="font-weight:700;">LET'S FIND YOU A JOB</a>
+	}
+</div>
+
+<div class="container mt-4">
+	@if (User.Identity != null && User.Identity.IsAuthenticated)
+	{
+		<div class="row row-cols-1 row-cols-md-3 g-4">
+			<div class="col">
+				<a asp-controller="JobPost" asp-action="Index" class="card h-100 text-decoration-none text-dark">
+					<div class="card-body">
+						<h5 class="card-title">View All Job Listings</h5>
+						<p class="card-text">Browse all available job postings and apply to those that suit you.</p>
+					</div>
+				</a>
+			</div>
+			<div class="col">
+				<a asp-controller="AppliedJobs" asp-action="AppliedJobs" class="card h-100 text-decoration-none text-dark">
+					<div class="card-body">
+						<h5 class="card-title">Your Applied Jobs</h5>
+						<p class="card-text">See the jobs you've applied for and track application status.</p>
+					</div>
+				</a>
+			</div>
+			<div class="col">
+				@if (User.IsInRole("Employee"))
+				{
+					<a asp-controller="EmployeeProfile" asp-action="Index" class="card h-100 text-decoration-none text-dark">
+						<div class="card-body">
+							<h5 class="card-title">Profile</h5>
+							<p class="card-text">View and edit your profile details.</p>
+						</div>
+					</a>
+				}
+				else if (User.IsInRole("Employer"))
+				{
+					<a asp-controller="EmployerProfile" asp-action="Index" class="card h-100 text-decoration-none text-dark">
+						<div class="card-body">
+							<h5 class="card-title">Employer Dashboard</h5>
+							<p class="card-text">Manage your company profile and job posts.</p>
+						</div>
+					</a>
+				}
+			</div>
+		</div>
+	}
 </div>

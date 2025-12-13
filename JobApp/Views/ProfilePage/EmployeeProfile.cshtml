@@ -1,0 +1,26 @@
+
+@model JobApp.Models.Employee
+
+@{
+	ViewData["Title"] = "Employee Profile";
+}
+
+<h1>Employee Profile</h1>
+
+<div>
+	<h4>@Model.FirstName @Model.LastName</h4>
+	<hr />
+	<dl class="row">
+		<dt class="col-sm-2">Email</dt>
+		<dd class="col-sm-10">@Model.Email</dd>
+
+		<dt class="col-sm-2">Phone</dt>
+		<dd class="col-sm-10">@Model.PhoneNumber</dd>
+	</dl>
+
+	   <p>
+		   <a asp-controller="JobPost" asp-action="Index">View All Job Posts</a> |
+		   <a asp-controller="Home" asp-action="Index">Home</a> |
+		   <a asp-action="Edit" class="btn btn-sm btn-primary">Edit Profile</a>
+	   </p>
+	</div>

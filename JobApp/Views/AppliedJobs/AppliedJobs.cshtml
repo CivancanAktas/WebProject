@@ -1,0 +1,47 @@
+@model IEnumerable<JobApp.Models.JobDetails>
+
+@{
+    ViewData["Title"] = "Applied Jobs";
+}
+
+<h1>APPLIED JOBS</h1>
+
+@if (!Model.Any())
+{
+    <p>NO APPLICATIONS.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                 <th>Title</th>
+                 <th>Company</th>
+                 <th>Location</th>
+                 <th>Job Type</th>
+                 <th>Posted Date</th>
+                 <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var job in Model)
+        {
+            <tr>
+                <td>@job.Title</td>
+                <td>@job.Company</td>
+                <td>@job.Location</td>
+                <td>@job.JobType</td>
+                <td>@job.PostedDate.ToShortDateString()</td>
+                <td>
+                    <a asp-controller="JobPost" asp-action="Details" asp-route-id="@job.Id">Details</a>
+                    @* Cancel button: posts to AppliedJobsController.CancelApply to remove this application from the employee's list *@
+                    <form asp-controller="AppliedJobs" asp-action="CancelApply" asp-route-id="@job.Id" method="post" style="display:inline-block; margin-left:8px;">
+                        <input type="hidden" name="returnUrl" value="@Url.Action("AppliedJobs", "AppliedJobs")" />
+                        <button type="submit" class="btn btn-sm btn-danger">Cancel</button>
+                    </form>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}

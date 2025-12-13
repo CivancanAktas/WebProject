@@ -1,0 +1,158 @@
+@model IEnumerable<JobApp.Models.JobDetails>
+@{
+    var currentPage = ViewData["CurrentPage"] as int? ?? 1;
+    var totalPages = ViewData["TotalPages"] as int? ?? 1;
+    var years = ViewData["Years"] as List<int> ?? new List<int>();
+    var selectedYear = ViewData["Year"] as int?;
+    var jobTypes = ViewData["JobTypes"] as List<string> ?? new List<string>();
+    var locations = ViewData["Locations"] as List<string> ?? new List<string>();
+    var selectedJobType = ViewData["JobType"] as string;
+    var selectedLocation = ViewData["Location"] as string;
+    var jobSearchString = ViewData["JobSearchString"] as string;
+    var currentUserEmail = ViewData["CurrentUserEmail"] as string;
+    var isEmployer = ViewData["IsEmployer"] as bool? ?? false;
+}
+
+
+@section Scripts {
+    <script>
+        const searchBox = document.getElementById("liveSearchBox");
+        const resultsDiv = document.getElementById("liveSearchResults");
+
+        searchBox.addEventListener("input", function () {
+            const query = this.value.trim();
+            if (query === "") { resultsDiv.innerHTML = ""; return; }
+
+            fetch(`/api/jobposts/search?q=${encodeURIComponent(query)}`)
+                .then(r => r.json())
+                .then(data => {
+                    resultsDiv.innerHTML = "";
+                    if (!data || data.length === 0) { resultsDiv.innerHTML = "<p>No jobs found.</p>"; return; }
+                    let html = "<ul class='list-group'>";
+                    data.forEach(j => {
+                        html += `
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span>
+                                <strong>${j.title}</strong>
+                                ${j.postedDate ? " (" + new Date(j.postedDate).getFullYear() + ")" : ""}
+                                ${j.jobType ? " - " + j.jobType : ""}
+                            </span>
+                            <a href="/JobPost/Details/${j.id}" class="btn btn-sm btn-outline-primary">Details</a>
+                        </li>`;
+                    });
+                    html += "</ul>";
+                    resultsDiv.innerHTML = html;
+                })
+                .catch(() => resultsDiv.innerHTML = "<p>Error searching.</p>");
+        });
+    </script>
+}
+
+<form asp-action="Index" method="get" class="mb-3 d-flex gap-2">
+    <input type="search" name="jobSearchString" value="@ViewData["JobSearchString"]" class="form-control" placeholder="Search title, description or company" />
+
+    <select name="year" class="form-select">
+        <option value="">All Years</option>
+        @foreach (var y in years)
+        {
+            <option value="@y" selected="@((selectedYear.HasValue) && y == selectedYear.Value)">@y</option>
+        }
+    </select>
+
+    <select name="jobType" class="form-select">
+        <option value="">All Types</option>
+        @foreach (var t in jobTypes)
+        {
+            <option value="@t" selected="@((selectedJobType ?? string.Empty) == t)">@t</option>
+        }
+    </select>
+
+    <select name="location" class="form-select">
+        <option value="">All Locations</option>
+        @foreach (var l in locations)
+        {
+            <option value="@l" selected="@((selectedLocation ?? string.Empty) == l)">@l</option>
+        }
+    </select>
+
+    <button type="submit" class="btn btn-primary">Search</button>
+    <a asp-action="Index" class="btn btn-outline-secondary">Clear</a>
+</form>
+
+@if (User.IsInRole("Admin"))
+{
+    <p><a asp-action="Create">Create New</a></p>
+}
+
+    <table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Company</th>
+            <th>Location</th>
+            <th>Salary</th>
+            <th>Job Type</th>
+            <th>Employer</th>
+            <th>Applicants</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model) {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Title)</td>
+            <td>@Html.DisplayFor(modelItem => item.Description)</td>
+            <td>@Html.DisplayFor(modelItem => item.Company)</td>
+            <td>@Html.DisplayFor(modelItem => item.Location)</td>
+            <td>@Html.DisplayFor(modelItem => item.Salary)</td>
+            <td>@Html.DisplayFor(modelItem => item.JobType)</td>
+            <td>@(item.Employer?.CompanyName ?? "N/A")</td>
+            <td>
+                @{ var applicantCount = item.Employees?.Count() ?? 0; }
+                @if (isEmployer && !string.IsNullOrEmpty(currentUserEmail) && item.Employer != null && string.Equals(item.Employer.ContactEmail, currentUserEmail, StringComparison.OrdinalIgnoreCase))
+                {
+                    <a asp-action="Applicants" asp-route-id="@item.Id">View (@applicantCount)</a>
+                }
+                else
+                {
+                    @applicantCount
+                }
+            </td>
+            <td>
+               // Allow Admins or the Employer who owns the job to Edit/Delete *
+                @if (User.IsInRole("Admin") || (isEmployer && !string.IsNullOrEmpty(currentUserEmail) && item.Employer != null && string.Equals(item.Employer.ContactEmail, currentUserEmail, StringComparison.OrdinalIgnoreCase)))
+                {
+                    <text>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </text>
+                }
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+@if (totalPages > 1)
+{
+    <nav aria-label="Job pagination">
+        <ul class="pagination justify-content-center">
+            <li class="page-item @(currentPage == 1 ? "disabled" : "")">
+                <a class="page-link" asp-action="Index" asp-route-page="@(currentPage - 1)" asp-route-year="@(ViewData["Year"])" asp-route-jobType="@(ViewData["JobType"])" asp-route-location="@(ViewData["Location"])" asp-route-jobSearchString="@(ViewData["JobSearchString"])">Previous</a>
+            </li>
+
+            @for (int i = 1; i <= totalPages; i++)
+            {
+                <li class="page-item @(i == currentPage ? "active" : "")">
+                    <a class="page-link" asp-action="Index" asp-route-page="@i" asp-route-year="@(ViewData["Year"])" asp-route-jobType="@(ViewData["JobType"])" asp-route-location="@(ViewData["Location"])" asp-route-jobSearchString="@(ViewData["JobSearchString"])">@i</a>
+                </li>
+            }
+
+            <li class="page-item @(currentPage == totalPages ? "disabled" : "")">
+                <a class="page-link" asp-action="Index" asp-route-page="@(currentPage + 1)" asp-route-year="@(ViewData["Year"])" asp-route-jobType="@(ViewData["JobType"])" asp-route-location="@(ViewData["Location"])" asp-route-jobSearchString="@(ViewData["JobSearchString"])">Next</a>
+            </li>
+        </ul>
+    </nav>
+}

@@ -1,0 +1,38 @@
+@model IEnumerable<JobApp.Models.Employee>
+
+@{
+    ViewData["Title"] = "Applicants";
+}
+
+<h2>Applicants</h2>
+
+@if (Model == null || !Model.Any())
+{
+    <p>No applicants yet for this job.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Resume</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var emp in Model)
+        {
+            <tr>
+                <td>@emp.FullName</td>
+                <td>@emp.Email</td>
+                <td>@(string.IsNullOrEmpty(emp.Resume) ? "—" : emp.Resume)</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+<p>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</p>

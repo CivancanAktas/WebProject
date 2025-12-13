@@ -24,16 +24,47 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="mainNavbar">
-                    <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="JobPost" asp-action="JobPost">Jobs</a>
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="JobPost" asp-action="JobPost">Post Job</a>
+                            <a class="nav-link" asp-controller="JobPost" asp-action="Index">Jobs</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="ProfilePage" asp-action="Index">Profile</a>
-                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        @if (User.Identity != null && User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                @if (User.IsInRole("Employee"))
+                                {
+                                    <a class="nav-link" asp-controller="AppliedJobs" asp-action="AppliedJobs">Applied Jobs</a>
+                                }
+                            </li>
+                            <li class="nav-item">
+                                @if (User.IsInRole("Employee"))
+                                {
+                                    <a class="nav-link" asp-controller="EmployeeProfile" asp-action="Index">Profile</a>
+                                }
+                                else if (User.IsInRole("Employer"))
+                                {
+                                    <a class="nav-link" asp-controller="EmployerProfile" asp-action="Index">Profile</a>
+                                }
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">@User.Identity.Name</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                    <li><a class="dropdown-item" asp-controller="LoginPage" asp-action="Logout">Logout</a></li>
+                                </ul>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="LoginPage" asp-action="Login">Login</a>
+                            </li>
+                        }
                     </ul>
                 </div>
             </div>

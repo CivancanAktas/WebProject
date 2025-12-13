@@ -9,11 +9,11 @@ namespace JobApp.Data
         {
         }
 
-        public DbSet<JobApp.Models.Employee> Employees { get; set; } = default!;
+        public DbSet<JobApp.Models.Employee> Employees => Set<Employee>();
 
-        public DbSet<JobApp.Models.Employer> Employers { get; set; } = default!;
+        public DbSet<JobApp.Models.Employer> Employers => Set<Employer>();
 
-       public DbSet<JobApp.Models.JobDetails> JobDetails { get; set; } = default!;
+       public DbSet<JobApp.Models.JobDetails> JobDetails => Set<JobDetails>();
     }       
 
 }

@@ -19,4 +19,11 @@ public class Employee
 
     public List<JobDetails>? AppliedJobs { get; set; }
     
+    // Optional resume text or link to resume (not persisted yet)
+    [System.ComponentModel.DataAnnotations.Schema.NotMapped]
+    public string? Resume { get; set; }
+
+    // Convenience property for display purposes
+    public string FullName => $"{FirstName} {LastName}".Trim();
+    
 }

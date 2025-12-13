@@ -5,6 +5,7 @@ using JobApp.Models;
 
 namespace JobApp.Data;
 
+// Bridges Identity and application data in one EF Core DbContext
 public class JobAppIdentityContext : IdentityDbContext<IdentityUser>
 {
     public JobAppIdentityContext(DbContextOptions<JobAppIdentityContext> options) : base(options)

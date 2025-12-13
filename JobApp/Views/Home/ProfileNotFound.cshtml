@@ -1,0 +1,30 @@
+@{
+    ViewData["Title"] = "Profile Not Found";
+}
+
+<div class="container mt-5">
+    <div class="alert alert-warning" role="alert">
+        <h4 class="alert-heading">Profile Not Found</h4>
+        <p>
+            Your profile information could not be found in our system.
+            This may happen if your account was recently created or if there was an error during registration.
+        </p>
+        <hr />
+        <p>
+            Please complete your profile information to continue.
+        </p>
+    </div>
+
+    <div class="mt-4">
+        <p>
+            <a asp-controller="LoginPage" asp-action="RegisterEmployee" class="btn btn-primary">Complete Employee Profile</a>
+            <a asp-controller="LoginPage" asp-action="RegisterEmployer" class="btn btn-success">Complete Employer Profile</a>
+        </p>
+    </div>
+
+    <div class="mt-4">
+        <p>
+            <a asp-controller="LoginPage" asp-action="Logout" class="btn btn-outline-secondary">Sign Out</a>
+        </p>
+    </div>
+</div>
