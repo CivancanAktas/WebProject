@@ -9,7 +9,7 @@ namespace JobApp.Migrations.Identity
     public partial class InitialIdentity : Migration
     {
         /// <inheritdoc />
-        protected override void Up(MigrationBuilder migrationBuilder)
+        protected override void Up(MigrationBuilder migrationBuilder) // Create Identity and application tables
         {
             migrationBuilder.CreateTable(
                 name: "AspNetRoles",
@@ -25,7 +25,7 @@ namespace JobApp.Migrations.Identity
                     table.PrimaryKey("PK_AspNetRoles", x => x.Id);
                 });
 
-            migrationBuilder.CreateTable(
+            migrationBuilder.CreateTable( // AspNetUsers table
                 name: "AspNetUsers",
                 columns: table => new
                 {
@@ -50,7 +50,7 @@ namespace JobApp.Migrations.Identity
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
                 });
 
-            migrationBuilder.CreateTable(
+            migrationBuilder.CreateTable(  // Employees table
                 name: "Employees",
                 columns: table => new
                 {
@@ -66,7 +66,7 @@ namespace JobApp.Migrations.Identity
                     table.PrimaryKey("PK_Employees", x => x.Id);
                 });
 
-            migrationBuilder.CreateTable(
+            migrationBuilder.CreateTable( // Create Employers table
                 name: "Employers",
                 columns: table => new
                 {
@@ -83,7 +83,7 @@ namespace JobApp.Migrations.Identity
                     table.PrimaryKey("PK_Employers", x => x.Id);
                 });
 
-            migrationBuilder.CreateTable(
+            migrationBuilder.CreateTable( // Create AspNetRoleClaims table
                 name: "AspNetRoleClaims",
                 columns: table => new
                 {
@@ -104,7 +104,7 @@ namespace JobApp.Migrations.Identity
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateTable(
+            migrationBuilder.CreateTable( // Create AspNetUserClaims table
                 name: "AspNetUserClaims",
                 columns: table => new
                 {
@@ -125,7 +125,7 @@ namespace JobApp.Migrations.Identity
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateTable(
+            migrationBuilder.CreateTable( //    Create AspNetUserLogins table
                 name: "AspNetUserLogins",
                 columns: table => new
                 {
@@ -145,7 +145,7 @@ namespace JobApp.Migrations.Identity
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateTable(
+            migrationBuilder.CreateTable( // Create AspNetUserRoles table
                 name: "AspNetUserRoles",
                 columns: table => new
                 {

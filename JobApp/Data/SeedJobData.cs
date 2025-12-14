@@ -10,7 +10,7 @@ public static class SeedJobData
         using var scope = app.ApplicationServices.CreateScope();
         var context = scope.ServiceProvider.GetRequiredService<JobAppContext>();
 
-        // Apply pending migrations (safe for development; gate in production if needed)
+        // Apply pending migrations 
         if (context.Database.GetPendingMigrations().Any())
         {
             context.Database.Migrate();

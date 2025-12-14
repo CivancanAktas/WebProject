@@ -9,7 +9,7 @@ namespace JobApp.Data
         {
         }
 
-        public DbSet<JobApp.Models.Employee> Employees => Set<Employee>();
+        public DbSet<JobApp.Models.Employee> Employees => Set<Employee>(); 
 
         public DbSet<JobApp.Models.Employer> Employers => Set<Employer>();
 

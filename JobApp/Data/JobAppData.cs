@@ -19,7 +19,7 @@ namespace JobApp.Data
     {
         public static List<JobListing> GetJobListings()
         {
-            return new List<JobListing>
+            return new List<JobListing> // Sample job listings
             {
                 new JobListing
                 {

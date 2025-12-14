@@ -8,14 +8,14 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace JobApp.Migrations.Identity
+namespace JobApp.Migrations.Identity 
 {
-    [DbContext(typeof(JobAppIdentityContext))]
-    [Migration("20251213121650_InitialIdentity")]
-    partial class InitialIdentity
+    [DbContext(typeof(JobAppIdentityContext))] 
+    [Migration("20251213121650_InitialIdentity")] 
+    partial class InitialIdentity  
     {
         /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder) 
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.10");

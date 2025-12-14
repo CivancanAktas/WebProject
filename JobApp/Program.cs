@@ -89,7 +89,7 @@ using (var scope = app.Services.CreateScope())
     jobDb.Database.Migrate();
 }
 
-// Run seeding logic that depends on IApplicationBuilder (mirrors CineClub pattern)
+
 SeedJobData.EnsurePopulated(app);
 
 app.Run();
