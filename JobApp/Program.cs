@@ -1,5 +1,5 @@
-// Program.cs: configures services, DB context, Identity, middleware and routing for the JobApp.
-// High level: (1) register EF Core context and Identity, (2) configure middleware (auth), (3) map controller routes
+
+
 using JobApp.Models;
 using JobApp.Data;
 using Microsoft.AspNetCore.Identity;
@@ -58,7 +58,7 @@ app.UseAuthorization();
 // Map static web assets and controller routes
 app.MapStaticAssets();
 
-// Sadece bir tane default route yeterli
+// one default route for controllers
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}")

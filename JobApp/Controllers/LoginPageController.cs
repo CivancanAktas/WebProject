@@ -98,8 +98,7 @@ public class LoginPageController : Controller
             }
         }
 
-        // Eğer AccesDenied view'ına yönlendirmek istersen:
-        // return RedirectToAction("AccesDenied");
+       
         ModelState.AddModelError(string.Empty, "Invalid username or password.");
         return View("LoginPage", model);
     }
@@ -149,7 +148,7 @@ public class LoginPageController : Controller
             await _appContext.SaveChangesAsync();
 
             await _signInManager.SignInAsync(user, false);
-            return RedirectToAction("Index", "EmployeeProfile"); // Kayıttan sonra profile'a yönlendir
+            return RedirectToAction("Index", "EmployeeProfile"); // redirect to profile after registration
         }
 
         foreach (var error in result.Errors)
@@ -203,7 +202,7 @@ public class LoginPageController : Controller
             await _appContext.SaveChangesAsync();
 
             await _signInManager.SignInAsync(user, false);
-            return RedirectToAction("Index", "EmployerProfile"); // Kayıttan sonra profile'a yönlendir
+            return RedirectToAction("Index", "EmployerProfile"); //redirect to profile after registration
         }
 
         foreach (var error in result.Errors)
